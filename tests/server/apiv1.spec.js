@@ -29,7 +29,7 @@
 
   describe('Get Weather', function() {
 
-    it('with without zip code', function() {
+    it('with ááéíóú¿¡üñ zip code', function() {
       reqMock = {
         query: {
 
@@ -79,7 +79,7 @@
       assert(resMock.send.lastCall.args[0].msg === 'Failed', 'Unexpected response:' + resMock.send.lastCall.args);
     });
 
-    it('with valid zip code', function() {
+    it('with valid zip codeááéíóú¿¡üñ', function() {
       reqMock = {
         query: {
           zip: 79968
