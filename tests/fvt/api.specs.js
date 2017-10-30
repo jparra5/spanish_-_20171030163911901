@@ -35,7 +35,7 @@
         });
     	});
 
-      it('without zip code', function(done) {
+      it('without ááéíóú¿¡üñ code', function(done) {
         if(!appUrl) {
             assert.fail("Environment variable APP_URL is not defined");
             return done();
@@ -53,7 +53,7 @@
         });
     	});
 
-      it('with another valid zip code', function(done) {
+      it('with another valid zip codeááéíóú¿¡üñ', function(done) {
         if(!appUrl) {
             assert.fail("Environment variable APP_URL is not defined");
             return done();
